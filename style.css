@@ -227,7 +227,7 @@ h1 {
   padding  : 20px;
   width    : 125px;
   height   : 156px;
-  transform: translateZ(20px);
+  transform: translateZ(5px);
   filter   : drop-shadow(0.2rem 0.2rem 0.3rem rgba(0, 0, 0, 0.4));
 }
 
