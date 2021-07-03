@@ -14,6 +14,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
   <meta charset="utf-8">
+  <script defer src="scrolling.js"></script>
 
 </head>
 
@@ -61,29 +62,68 @@
     </section>
 
     <section id="Projects">
-      <div class="row">
-        <div class="col">
-          <p>comiong soon
-          <div class="dots"></div>
-          </p>
-        </div>
-        <div class="col">
-          <p>comiong soon
-          <div class="dots"></div>
-          </p>
-        </div>
-        <div class="col">
-          <p>comiong soon
-          <div class="dots"></div>
-          </p>
-        </div>
-        <div class="col">
-          <p>comiong soon
-          <div class="dots"></div>
-          </p>
+      <div id="pc_content">
+        <div class="row">
+          <div data-modal-target="#modal" class="col" id="portfolio_website">
+            <div class="project_card">
+              <div class="project_name">
+                <h3>My portfolio website</h3>
+              </div>
+              <!-- <div class="card_body">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic inventore labore minus adipisci consectetur deserunt, vero quibusdam in! Incidunt expedita animi labore aspernatur.</p>
+            </div> -->
+
+              <button class="project_buttom" data-modal-target="#modal"> See more</button>
+            </div>
+          </div>
+          <div class="modal" id="modal">
+
+            <div class="modal-header">
+              <div class="title">Example Modal</div>
+              <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum
+              obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus,
+              consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem
+              dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis
+              perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae
+              nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
+            </div>
+          </div>
+          <div id="overlay"></div>
+
+          <div class="col">
+            <p>comiong soon
+            <div class="dots"></div>
+            </p>
+          </div>
+          <div class="col">
+            <p>comiong soon
+            <div class="dots"></div>
+            </p>
+          </div>
+          <div class="col">
+            <p>comiong soon
+            <div class="dots"></div>
+            </p>
+          </div>
         </div>
       </div>
+      <!-- <div id="phone_content">
+    <div class="phone_grid">
+      <div class="col">
+        <p>comiong soon
+        <div class="dots"></div>
+        </p>
+      </div>
+      <div class="col">
+        <p>comiong soon
+        <div class="dots"></div>
+        </p>
+      </div>
 
+  </div> -->
     </section>
     <section id="About_me">
       <h2>About Me</h2>
