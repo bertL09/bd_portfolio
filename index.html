@@ -13,6 +13,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Benne&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta charset="utf-8">
   <script defer src="scrolling.js"></script>
 
@@ -32,19 +33,22 @@
             </li>
 
             <li>
-              <a href="#Projects">Projects</a>
+              <a href="#Projects">Projekty</a>
             </li>
 
             <li>
-              <a href="#About_me">About me</a>
+              <a href="#About_me">O mnie</a>
             </li>
 
             <li>
-              <a href="#Contact">Contact</a>
+              <a href="#Contact">Kontakt</a>
             </li>
 
           </ul>
-          <div class="mobile_menu">
+          <input class="mobile_menu" type="checkbox" id="active">
+          <label for="active" class="menu-btn"><span></span></label>
+          <label for="active" class="close"></label>
+          <div>
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -57,87 +61,71 @@
 
       <div class="main_container">
         <h1>Hello, my name is Bartek.</h1>
-        <p class="subtitle">Welcome to my portfolio!</p>
+        <p class="subtitle">Witam w moim portfolio!</p>
       </div>
     </section>
 
     <section id="Projects">
-      <div id="pc_content">
+      
         <div class="row">
-          <div data-modal-target="#modal" class="col" id="portfolio_website">
-            <div class="project_card">
-              <div class="project_name">
-                <h3>My portfolio website</h3>
-              </div>
-              <!-- <div class="card_body">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic inventore labore minus adipisci consectetur deserunt, vero quibusdam in! Incidunt expedita animi labore aspernatur.</p>
-            </div> -->
 
-              <button class="project_buttom" data-modal-target="#modal"> See more</button>
-            </div>
-          </div>
-          <div class="modal" id="modal">
 
-            <div class="modal-header">
-              <div class="title">Example Modal</div>
-              <button data-close-button class="close-button">&times;</button>
+          <section class="item">
+            <div class="col" id="agro_camping">
+              <a href="agro_camping.html" target="#blank">
+                <div class="project_card">
+                  <div class="project_name">
+                    <h3>Agro camping Olsztyn</h3>
+                  </div>
+                  <button class="project_buttom"> See more</button>
+                </div>
+              </a>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse quod alias ut illo doloremque eum ipsum
-              obcaecati distinctio debitis reiciendis quae quia soluta totam doloribus quos nesciunt necessitatibus,
-              consectetur quisquam accusamus ex, dolorum, dicta vel? Nostrum voluptatem totam, molestiae rem at ad autem
-              dolor ex aperiam. Amet assumenda eos architecto, dolor placeat deserunt voluptatibus tenetur sint officiis
-              perferendis atque! Voluptatem maxime eius eum dolorem dolor exercitationem quis iusto totam! Repudiandae
-              nobis nesciunt sequi iure! Eligendi, eius libero. Ex, repellat sapiente!
-            </div>
-          </div>
-          <div id="overlay"></div>
+          </section>
 
-          <div class="col">
-            <p>comiong soon
-            <div class="dots"></div>
-            </p>
-          </div>
-          <div class="col">
-            <p>comiong soon
-            <div class="dots"></div>
-            </p>
-          </div>
-          <div class="col">
-            <p>comiong soon
-            <div class="dots"></div>
-            </p>
-          </div>
+          <section class="item">
+            <div class="col" id="portfolio_website">
+              <a href="portfolio.html" target="#blank">
+                <div class="project_card">
+                  <div class="project_name">
+                    <h3>My portfolio website</h3>
+                  </div>
+                  <button class="project_buttom"> See more</button>
+                </div>
+              </a>
+            </div>
+          </section>
+
+          <section class="item">
+            <div class="col">
+              <p>comiong soon
+                <div class="dots"></div>
+              </p>
+            </div>
+          </section>  
         </div>
-      </div>
-      <!-- <div id="phone_content">
-    <div class="phone_grid">
-      <div class="col">
-        <p>comiong soon
-        <div class="dots"></div>
-        </p>
-      </div>
-      <div class="col">
-        <p>comiong soon
-        <div class="dots"></div>
-        </p>
-      </div>
+    
+      
 
-  </div> -->
     </section>
+
+
     <section id="About_me">
-      <h2>About Me</h2>
-      <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur, repellendus sit? Amet nihil adipisci
-        perspiciatis possimus reiciendis. Aut laudantium qui, minima soluta sit reiciendis rerum, unde voluptatum
-        perferendis, suscipit autem.</p>
+ 
+      <div class="am_content">
+        <div class="calzone"></div>
+        <div class="am_text">Poza programowaniem interesuję się również kuchnią włoską i gruzińską,<br> w wolnych chwilach lubię grać w szachy lub spędzać czas aktywniej jeżdżąc na rowerze lub pływając.</div>
+      </div>
     </section>
+
+
     <section id="Contact">
       <div data-tilt data-tilt-max="3" class="contact_card">
 
-        <div class="profile_sidebar">
-          <img class="photo" src="img/00x625_px_6xwaxsr2.jpg" alt="">
+        
+          <img class="photo_contact" alt="">
 
-        </div>
+       
         <div class="conatact_info">
           <p>Bartosz Daniluk</p>
           <ul>

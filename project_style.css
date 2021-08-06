@@ -1,0 +1,165 @@
+:root {
+    --bg-color            : hsl(20 100% 94%);
+
+  }
+
+  
+  
+body {
+    background-color: var(--bg-color);
+    overflow        : auto;
+    font-weight     : 500;
+    margin          : 0;
+    place-items     : center;
+    place-content   : center;
+    line-height     : 1.6;
+
+}
+
+.content{
+    width: 100%;
+   
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.title{
+    font-size  : clamp(1rem, 3vw + 1rem, 4rem);
+    font-family: "Source Code Pro", monospace;
+    width: 100%;
+    text-align: center;
+    font-size: 8vh;
+}
+
+.header_agro_camping{
+    margin:0 0 5% 0;
+    width: 50%;
+    height: 60vh;
+    background-size: COVER;
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-image: url(./img/agro_camping_pc.JPG);
+    padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+.header_portfolio{
+    margin:0 0 5% 0;
+    width: 50%;
+    height: 60vh;
+    background-size: COVER;
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-image: url(./img/portfoliowebsite.JPG);
+    padding: 5%;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.project_txt{
+    height: 60vh;
+    width: 50%;
+    background-color: #FFF6EC;
+    padding: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 2vh;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
+}
+
+.label_container{
+   display: flex;
+   
+
+}
+.page_src{
+    margin-top: 5%;
+    width: 100%;
+    height: 10vh;
+    display: grid;
+    grid-template-columns: 5vh 5vh;
+}
+.github{
+    height: 5vh;
+    width: 5vh;
+    background-image: url(./img/25231.png);
+    background-size: contain;
+}
+.website{
+    height: 5vh;
+    width: 5vh;
+    background-image: url(./img/005071cbf1fdd17673607ecd7b7e88f6.png);
+    background-size: contain;
+}
+
+.react_js{
+    background-color: #7EDFFF;
+ 
+    
+}
+.react_js:before{
+    border-right: 4vh solid #7EDFFF;
+}
+.javascript{
+    background-color: #F7DF18;
+ 
+    
+}
+.javascript:before{
+    border-right: 4vh solid #F7DF18;
+}
+.css{
+    
+    background-color: #264DE4;
+}
+.css::before{
+    border-right: 4vh solid#264DE4;
+}
+.html{
+    background-color: #E44D26;
+}
+.html::before{
+    border-right: 4vh solid#E44D26;
+}
+#talkbubble {
+    text-align: center;
+    font-size: 1.5vh;
+    line-height: 6vh;
+    margin:5vh;
+    width: 9vh;
+    height: 6vh;
+    
+    position: relative;
+    -moz-border-top-right-radius: 0.9vh;
+    -webkit-border-top-right-radius: 0.9vh;
+    border-top-right-radius: 0.9vh;
+    -moz-border-bottom-right-radius: 0.9vh;
+    -webkit-border-bottom-right-radius: 0.9vh;
+    border-bottom-right-radius: 0.9vh;
+  }
+  #talkbubble:before {
+    content: "";
+    position: absolute;
+    right: 100%;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-top: 3vh solid transparent;
+    border-bottom: 3vh solid transparent;
+  }
+
+  @media screen and (max-width:760px){
+    .content{
+
+        flex-direction: column;
+        
+    }
+
+
+    .header{
+        width: 100%;
+    }
+    
+    .project_txt{
+        width: 100%;
+    }
+
+  }
